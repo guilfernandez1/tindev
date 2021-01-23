@@ -5,7 +5,7 @@ export default StyleSheet.create({
         flex: 1,
         backgroundColor: '#f5f5f5',
         alignItems: 'center',
-        justifyContent: 'space-between'    
+        justifyContent: 'space-between'
     },
 
     logo: {
@@ -66,7 +66,7 @@ export default StyleSheet.create({
     buttonsContainer: {
         flexDirection: 'row',
         marginBottom: 30,
-    },  
+    },
 
     button: {
         width: 50,
@@ -84,5 +84,49 @@ export default StyleSheet.create({
             width: 0,
             height: 2,
         },
-    },  
+    },
+
+    matchContainer: {
+        ...StyleSheet.absoluteFillObject,
+        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    matchImage: {
+        height: 60,
+        resizeMode: 'contain',
+    },
+
+    matchAvatar: {
+        width: 160,
+        height: 160,
+        borderRadius: 80,
+        borderWidth: 5,
+        borderColor: '#fff',
+        marginVertical: 30,
+    },
+
+    matchName: {
+        fontSize: 26,
+        fontWeight: 'bold',
+        color: '#fff',
+    },
+
+    matchBio: {
+        marginTop: 10,
+        fontSize: 16,
+        color: 'rgba(255,255,255,0.8)',
+        lineHeight: 24,
+        textAlign: 'center',
+        paddingHorizontal: 30,
+    },
+
+    closeMatch: {
+        fontSize: 16,
+        color: 'rgba(255,255,255,0.8)',
+        textAlign: 'center',
+        marginTop: 30,
+        fontWeight: 'bold',
+    },
 });
